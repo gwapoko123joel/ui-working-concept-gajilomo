@@ -1,0 +1,248 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.login-branding {
+  flex: 1;
+  background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.branding-content {
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+.branding-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+.branding-title .highlight {
+  color: var(--primary);
+}
+
+.branding-description {
+  color: #475569;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+}
+
+.branding-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-line {
+  height: 2px;
+  width: 40px;
+  background-color: var(--primary);
+}
+
+.login-form-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  color: #64748b;
+  margin-bottom: 2.5rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 0.05em;
+}
+
+.badge-secure {
+  background-color: #6ee7b7;
+  color: #064e3b;
+  font-size: 0.65rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+}
+
+.input-icon-right {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 2.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(10, 88, 202, 0.1);
+  background-color: #ffffff;
+}
+
+.input-wrapper input:disabled {
+  background-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.forgot-link {
+  font-size: 0.75rem;
+  color: var(--primary);
+  text-align: right;
+  font-weight: 500;
+  margin-top: -0.25rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.checkbox-group label {
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.login-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.form-policy {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.form-policy p {
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.policy-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.policy-links a {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-branding {
+    padding: 2rem;
+    min-height: 40vh;
+  }
+  .branding-title {
+    font-size: 2.5rem;
+  }
+}
